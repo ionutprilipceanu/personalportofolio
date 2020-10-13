@@ -172,6 +172,10 @@
   .nav-bar {
     padding: 30px;
   }
+
+  .nav-bar {
+    display: none;
+  }
   .burger {
     position: absolute;
     top: 0;

@@ -39,7 +39,7 @@ class Home extends Component {
                 <p>
                   Ionuț Prilipceanu <br/>
                   (+40) 751 684 142 <br/>
-                  E-mail: prilipceanu.ionut@gmail.com
+                  prilipceanu.ionut@gmail.com
                 </p>
               </div>
             </div>
