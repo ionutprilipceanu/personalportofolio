@@ -52,9 +52,21 @@
   border-color: black !important;
   border-radius: 5px;
   cursor: pointer;
-  color: #282C34;
   font-size: smaller;
+
+}
+
+.btn-resume a {
   text-decoration: none;
+  color: #282C34;
+}
+
+.btn-resume:hover {
+  background-color: #282C34;
+}
+
+.btn-resume a:hover {
+  color: white;
 }
 
 .contactName {
