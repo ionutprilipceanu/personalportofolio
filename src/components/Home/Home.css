@@ -14,10 +14,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 2% 4% 3% 4%;
-  width: 40%;
+  width: 600px;
   /* background-color: rgba(217, 241, 250, 0.2); */
   box-shadow: 8px 8px 16px rgba(30, 30, 30, 0.3);
-  height: 20%;
+  height: 250px;
 }
 
 .titlu {
@@ -50,6 +50,32 @@
   padding-right: 15px;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .contactInfo {
+    width: 45%;
+    height: 220px;
+  }
+  
+}
+
+@media screen and (max-width: 1070px) {
+
+  .contactInfo {
+    width: 45%;
+    height: 200px;
+  }
+
+  .contactInfo h1 {
+    font-size: 1.75rem;
+  }
+
+  .contactInfo p {
+    font-size: .8em;
+  }
+  
+}
+
 @media screen and (max-width: 950px) {
 
   .Intro {
@@ -62,7 +88,9 @@
   .contactInfo {
     width: 90%;
     margin: 2% 4% 5% 5%;
+    height: 30%;
   }
+  
 
 
 }
