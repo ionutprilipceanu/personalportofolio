@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './Home.css'
-import { Button } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 import Fade from "react-reveal/Fade"
 import favicon from '..//..//..//static/images/favicon.png'
 import homeimage from "..//Home/images/home.jpg"
