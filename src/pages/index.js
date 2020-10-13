@@ -12,6 +12,7 @@ export default class index extends react.Component {
       <div>
         <Nav_bar />
         <Home/>
+        
       </div>
     )
   }

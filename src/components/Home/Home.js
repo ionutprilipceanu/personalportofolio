@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './Home.css'
-// import { Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import Fade from "react-reveal/Fade"
 import favicon from '..//..//..//static/images/favicon.png'
 import homeimage from "..//Home/images/home.jpg"
@@ -44,6 +44,14 @@ class Home extends Component {
               </div>
             </div>
           </Fade>
+          <div className="btn-all">
+            <Button className="btn-start">
+              Get start
+            </Button>
+            <Button className="btn-resume"><a href="https://drive.google.com/file/d/13S3nMbk6jCNDppwiHHSQYSdGdlf__ezt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Get resume</a>
+              
+            </Button>
+          </div>
         </div>
       </Fade>
       

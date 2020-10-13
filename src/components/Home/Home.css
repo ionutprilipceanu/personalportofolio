@@ -30,11 +30,31 @@
   flex-direction: column;
 }
 
-.send_Btn {
-  padding: 5px 10px;
-  background-color: yellow !important;
+.btn-all {
+  margin:-25px 0 0 0;
+}
+
+.btn-start {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #282C34;
   border-color: black !important;
   border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: smaller;
+}
+
+.btn-resume {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-color: black !important;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #282C34;
+  font-size: smaller;
+  text-decoration: none;
 }
 
 .contactName {
