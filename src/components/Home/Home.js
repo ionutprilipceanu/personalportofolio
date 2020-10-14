@@ -45,7 +45,7 @@ class Home extends Component {
             </div>
           </Fade>
           <div className="btn-all">
-            <Link to="/cart/" className="btn-start">
+            <Link to="/" className="btn-start">
               Get started
             </Link>
             

@@ -31,7 +31,8 @@
 }
 
 .btn-all {
-  margin:-25px 0 0 0;
+  margin:-15px 0 0 0;
+
 }
 
 .btn-start {
@@ -43,6 +44,14 @@
   cursor: pointer;
   color: white;
   font-size: smaller;
+  border: 2px solid black;
+}
+
+.btn-start:hover{
+  color: white;
+  text-decoration: none;
+  opacity: 0.85;
+  transition-duration: 0.8s;
 }
 
 .btn-resume {
@@ -53,18 +62,19 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: smaller;
-
+  border: 2px solid black;
 }
 
 .btn-resume {
   text-decoration: none;
   color: #282C34;
-
 }
 
 .btn-resume:hover{
   background-color: #282c34;
   color: white;
+  text-decoration: none;
+  transition-duration: 0.8s;
 }
 
 .contactName {
@@ -84,16 +94,17 @@
 
   .contactInfo {
     width: 45%;
-    height: 220px;
+    height: 250px;
   }
+  
   
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1085px) {
 
   .contactInfo {
     width: 45%;
-    height: 200px;
+    height: 220px;
   }
 
   .contactInfo h1 {
@@ -102,6 +113,10 @@
 
   .contactInfo p {
     font-size: .8em;
+  }
+
+  .btn-all {
+    margin:-10px 0 0 0;
   }
   
 }
@@ -119,6 +134,11 @@
 
   .contactInfo p {
     font-size: .8em;
+  }
+
+  .btn-all {
+    margin:-5px 0 0 0;
+    font-size: small;
   }
 
 }
@@ -142,8 +162,12 @@
 
   .contactInfo {
     width: auto;
-    margin: -10% -5.5% 5% -6%;
+    margin: -9% -5.9% 5% -6%;
     position: relative;
+    border-radius: 0;
   }
+
+  
+
 
 }

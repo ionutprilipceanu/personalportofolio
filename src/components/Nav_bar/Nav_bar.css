@@ -156,7 +156,7 @@
   justify-content: center;
 }
 
-.logoInstagram:hover, .logoFacebook:hover {
+.logoLinkedin:hover, .logoFacebook:hover, .logoGithub:hover {
   color: darkslategrey;
   transition-duration: 0.85s;
 }
