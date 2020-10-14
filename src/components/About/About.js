@@ -25,16 +25,16 @@ export class About extends Component {
           <Card className="about_body">
             <Card.Body>
               <Card.Title className="abouttitle"><span className="border-bottom">About</span> </Card.Title>
-              <div>
+              <div className="aboutContent">
 
                 <div className="profilePhoto">
                   <img src={profilePhoto} alt="logo"></img>
                 </div>
                 
                 <div className="aboutSection">
-                <Card.Subtitle className="cardSubtitle">Hello, I’m Ionuț. Nice to meet you!</Card.Subtitle>
+                <Card.Subtitle className="cardSubtitleSection">Hello, I’m Ionuț. Nice to meet you!</Card.Subtitle>
                 <Card.Text className="aboutText">
-                I want to make some changes in my career, so the IT field would be a real challenge for me. It is known that teamwork, communication and transparency are the key for a successful team, so these qualities I want to highlight to make a proper contribution to the development of departament and also to the company. Down below you can find the skills that I gained in this journey and I case is it fits your requirements, I look forward to seeing you in an interview.
+                What I want is to make some changes in my career, so the IT field would be a real challenge for me. It is known that teamwork, communication and transparency are the key for a successful team, so these qualities I want to highlight to make a proper contribution to the development of departament and also to the company. Down below you can find the skills that I gained in this journey and I case is it fits your requirements, I look forward to seeing you in an interview.
                 </Card.Text>
                 </div>
                 
@@ -46,12 +46,15 @@ export class About extends Component {
 
         <Fade>
 
-        <Card.Title className="cardSubtitle">Skills</Card.Title>
+        <Card.Title className="cardSkills">Skills</Card.Title>
          <Card className="card-final">
         
           <Card className="carder_body">
             <Card.Body>
               <Card.Subtitle className="cardSubtitle">Technologies</Card.Subtitle>
+
+              <div className="bottomLine"></div>
+
               <Card.Text className="cardText">
               
                 <li>HTML5</li>
@@ -66,6 +69,9 @@ export class About extends Component {
           <Card className="carder_body">
             <Card.Body>
               <Card.Subtitle className="cardSubtitle">Knowledge</Card.Subtitle>
+
+              <div className="bottomLine"></div>
+
               <Card.Text className="cardText">
               
                 <li>REACT JS</li>
@@ -79,6 +85,9 @@ export class About extends Component {
           <Card className="carder_body">
             <Card.Body>
               <Card.Subtitle className="cardSubtitle">Tools and others</Card.Subtitle>
+
+              <div className="bottomLine"></div>
+
               <Card.Text className="cardText">
               
                 <li>Adobe Photoshop</li>
