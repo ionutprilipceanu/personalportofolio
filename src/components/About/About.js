@@ -21,7 +21,7 @@ export class About extends Component {
   render() {
     return (
       <div className="containerBodyCarder">
-        <Fade>
+        <Fade left cascade>
           <Card className="about_body">
             <Card.Body>
               <Card.Title className="abouttitle"><span className="border-bottom">About</span> </Card.Title>
@@ -44,7 +44,7 @@ export class About extends Component {
           </Card>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
 
         <Card.Title className="cardSkills">Skills</Card.Title>
          <Card className="card-final">
