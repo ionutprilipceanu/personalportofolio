@@ -36,7 +36,7 @@
 
 .btn-start {
   margin-right: 10px;
-  padding: 5px;
+  padding: 10px;
   background-color: #282C34;
   border-color: black !important;
   border-radius: 5px;
@@ -47,7 +47,7 @@
 
 .btn-resume {
   margin-right: 10px;
-  padding: 5px;
+  padding: 10px;
   background-color: #ffffff;
   border-color: black !important;
   border-radius: 5px;
@@ -56,16 +56,14 @@
 
 }
 
-.btn-resume a {
+.btn-resume {
   text-decoration: none;
   color: #282C34;
+
 }
 
-.btn-resume:hover {
-  background-color: #282C34;
-}
-
-.btn-resume a:hover {
+.btn-resume:hover{
+  background-color: #282c34;
   color: white;
 }
 

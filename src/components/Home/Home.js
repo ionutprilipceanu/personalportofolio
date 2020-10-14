@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import './Home.css'
-import { Button } from 'react-bootstrap'
 import Fade from "react-reveal/Fade"
 import favicon from '..//..//..//static/images/favicon.png'
 import homeimage from "..//Home/images/home.jpg"
+import Link from 'gatsby-link'
 
 class Home extends Component {
   constructor(props) {
@@ -45,12 +45,12 @@ class Home extends Component {
             </div>
           </Fade>
           <div className="btn-all">
-            <Button className="btn-start">
+            <Link to="/cart/" className="btn-start">
               Get started
-            </Button>
-            <Button className="btn-resume"><a href="https://drive.google.com/file/d/13S3nMbk6jCNDppwiHHSQYSdGdlf__ezt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Get resume</a>
-              
-            </Button>
+            </Link>
+            
+              <a className="btn-resume" href="https://drive.google.com/file/d/13S3nMbk6jCNDppwiHHSQYSdGdlf__ezt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Get resume</a>
+            
           </div>
         </div>
       </Fade>
