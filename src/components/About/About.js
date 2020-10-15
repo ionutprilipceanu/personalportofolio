@@ -45,61 +45,50 @@ export class About extends Component {
         </Fade>
 
         <Fade right cascade>
+          <div className="skillsContainer">
+            <Card.Title className="cardSkills">Skills</Card.Title>
+            <Card className="card-final">
+            
+              <Card className="carder_body">
+                <Card.Body>
+                  <Card.Subtitle className="cardSubtitle">Technologies</Card.Subtitle>
+                  <div className="bottomLine"></div>
+                  <Card.Text className="cardText">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                    <li>BOOTSTRAP</li>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
 
-        <Card.Title className="cardSkills">Skills</Card.Title>
-         <Card className="card-final">
-        
-          <Card className="carder_body">
-            <Card.Body>
-              <Card.Subtitle className="cardSubtitle">Technologies</Card.Subtitle>
+              <Card className="carder_body">
+                <Card.Body>
+                  <Card.Subtitle className="cardSubtitle">Knowledge</Card.Subtitle>
+                  <div className="bottomLine"></div>
+                  <Card.Text className="cardText">
+                    <li>REACT JS</li>
+                    <li>JSON</li>
+                    <li>AJAX</li>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
 
-              <div className="bottomLine"></div>
+              <Card className="carder_body">
+                <Card.Body>
+                  <Card.Subtitle className="cardSubtitle">Tools and others</Card.Subtitle>
+                  <div className="bottomLine"></div>
+                  <Card.Text className="cardText">
+                    <li>Adobe Photoshop</li>
+                    <li>Visual Studio Code</li>
+                    <li>GIT</li>
+                    <li>GitHub</li>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
 
-              <Card.Text className="cardText">
-              
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JAVASCRIPT</li>
-                <li>BOOTSTRAP</li>
-              
-              </Card.Text>
-            </Card.Body>
-          </Card>
-
-          <Card className="carder_body">
-            <Card.Body>
-              <Card.Subtitle className="cardSubtitle">Knowledge</Card.Subtitle>
-
-              <div className="bottomLine"></div>
-
-              <Card.Text className="cardText">
-              
-                <li>REACT JS</li>
-                <li>JSON</li>
-                <li>AJAX</li>
-              
-              </Card.Text>
-            </Card.Body>
-          </Card>
-
-          <Card className="carder_body">
-            <Card.Body>
-              <Card.Subtitle className="cardSubtitle">Tools and others</Card.Subtitle>
-
-              <div className="bottomLine"></div>
-
-              <Card.Text className="cardText">
-              
-                <li>Adobe Photoshop</li>
-                <li>Visual Studio Code</li>
-                <li>GIT</li>
-                <li>GitHub</li>
-              
-              </Card.Text>
-            </Card.Body>
-
-          </Card>
-          </Card> 
+            </Card> 
+          </div>
         </Fade>
       </div>
     )
