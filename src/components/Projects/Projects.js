@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade"
 // import photography_page from "..//About/images/photography_page.jpg"
 // import handcrafted_leader from "..//About/images/handcrafted_leather.jpg"
 // import filter_page from "..//About/images/filter_page.jpg"
-import profilePhoto from "..//Projects/images/profilePhoto.jpg"
+import profilePhoto from "..//Projects/images/profilePhotoA.jpg"
 
 
 
