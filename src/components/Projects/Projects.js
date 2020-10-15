@@ -29,7 +29,7 @@ export class Projects extends Component {
               <div className="aboutContent">
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img src={photographyPage} alt="photographyPage"/>
+                <Card.Img variant="top" src={photographyPage} alt="photographyPage"/>
                 <Card.Body>
                   <Card.Title>Photography</Card.Title>
                   <Card.Text>
@@ -40,7 +40,7 @@ export class Projects extends Component {
               </Card>
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img src={filterPage} alt="filterPage" />
+                <Card.Img variant="top" src={filterPage} alt="filterPage" />
                 <Card.Body>
                   <Card.Title>Filter App</Card.Title>
                   <Card.Text>
@@ -51,7 +51,7 @@ export class Projects extends Component {
               </Card>
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img src={handcraftedLeader} alt="handcraftedLeader" />
+                <Card.Img variant="top" src={handcraftedLeader} alt="handcraftedLeader" />
                 <Card.Body>
                   <Card.Title>Handcrafted leather</Card.Title>
                   <Card.Text>
