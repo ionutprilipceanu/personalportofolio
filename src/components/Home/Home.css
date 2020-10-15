@@ -6,7 +6,7 @@
 }
 
 
-.contactInfo {
+.contactInfoHome {
   position: absolute;
   top: 50px;
   bottom: 50px;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1200px) {
 
-  .contactInfo {
+  .contactInfoHome {
     width: 45%;
     height: 250px;
   }
@@ -102,16 +102,16 @@
 
 @media screen and (max-width: 1085px) {
 
-  .contactInfo {
+  .contactInfoHome {
     width: 45%;
     height: 220px;
   }
 
-  .contactInfo h1 {
+  .contactInfoHome h1 {
     font-size: 1.75rem;
   }
 
-  .contactInfo p {
+  .contactInfoHome p {
     font-size: .8em;
   }
 
@@ -123,16 +123,16 @@
 
 @media screen and (max-width: 950px) {
 
-  .contactInfo {
+  .contactInfoHome {
     width: 50%;
     height: 200px;
   }
 
-  .contactInfo h1 {
+  .contactInfoHome h1 {
     font-size: 1.5rem;
   }
 
-  .contactInfo p {
+  .contactInfoHome p {
     font-size: .8em;
   }
 
@@ -160,7 +160,7 @@
     
   }
 
-  .contactInfo {
+  .contactInfoHome {
     width: auto;
     margin: -9% -5.6% 5% -6%;
     position: relative;

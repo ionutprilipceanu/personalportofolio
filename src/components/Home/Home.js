@@ -29,7 +29,7 @@ class Home extends Component {
         />
       </div>
       <Fade left cascade>
-        <div className="contactInfo">
+        <div className="contactInfoHome">
           <Fade bottom cascade>
             <div className="titluShow">
               <h1>Personal portofolio</h1>

@@ -2,7 +2,8 @@ import React, * as react from 'react'
 import Nav_bar from "..//components/Nav_bar/Nav_bar"
 import Home from "..//components/Home/Home"
 import About from "..//components/About/About"
-
+import Projects from "..//components/Projects/Projects"
+import Form_contact from "../components/Form_contact/Form_contact"
 
 export default class index extends react.Component {
 
@@ -12,6 +13,8 @@ export default class index extends react.Component {
         <Nav_bar />
         <Home />
         <About />
+        <Projects />
+        <Form_contact />
       </div>
     )
   }
