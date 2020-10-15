@@ -84,14 +84,14 @@ class Form_contact extends Component {
             id="address-input" 
             type="email" 
             name="address" 
-            placeholder="Delivery address" 
+            placeholder="Enter email address" 
             required onChange={this.handInput}
             />
           </Form.Group>
         </Form.Row>
             
         <Form.Group>
-          <Form.Label>Enter your text</Form.Label>
+          <Form.Label>Enter your message</Form.Label>
           <Form.Control as="textarea" rows="5" columns="2"
           id="text-area" 
           type="text" 
