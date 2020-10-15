@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Card, Button} from 'react-bootstrap'
 import "./Projects.css"
 import Fade from "react-reveal/Fade"
-import photographyPage from "..//..//..//static/images/photographyPage.jpg"
-import handcraftedLeader from "..//..//..//static/images/handcraftedLeader.jpg"
-import filterPage from "..//..//..//static/images/filterPage.jpg"
+import photographyPage from "./images/photographyPage.jpg"
+import handcraftedLeader from "./images/handcraftedLeader.jpg"
+import filterPage from "./images/filterPage.jpg"
 
 
 
