@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade"
 // import photography_page from "..//About/images/photography_page.jpg"
 // import handcrafted_leader from "..//About/images/handcrafted_leather.jpg"
 // import filter_page from "..//About/images/filter_page.jpg"
-import profilePhotoII from "..//About/images/profilePhotoII.jpg"
+import profilePhoto from "..//About/images/profilePhoto.jpg"
 
 
 
@@ -44,7 +44,7 @@ export class Projects extends Component {
                 {/* <Card.Img variant="top" src={filter_page} alt="filterPage" /> */}
 
                 <div>
-                <img src={profilePhotoII} alt="logo"></img>
+                <img src={profilePhoto} alt="logo"></img>
                 </div>
 
                 <Card.Body>
