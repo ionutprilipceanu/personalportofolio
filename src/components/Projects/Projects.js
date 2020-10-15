@@ -41,12 +41,7 @@ export class Projects extends Component {
               </Card>
 
               <Card style={{ width: '18rem' }}>
-                {/* <Card.Img variant="top" src={filter_page} alt="filterPage" /> */}
-
-                <div>
-                <img src={profilePhoto} alt="logo"></img>
-                </div>
-
+                <Card.Img variant="top" src={profilePhoto} alt="filterPage" />
                 <Card.Body>
                   <Card.Title>Filter App</Card.Title>
                   <Card.Text>
