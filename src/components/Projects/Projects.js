@@ -42,7 +42,7 @@ export class Projects extends Component {
               <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={Pg} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Filter App</Card.Title>
                   <Card.Text>
                     React JS, CSS3, Bootstrap
                   </Card.Text>
