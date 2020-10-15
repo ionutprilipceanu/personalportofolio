@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Card, Button} from 'react-bootstrap'
 import "./Projects.css"
 import Fade from "react-reveal/Fade"
-import Ip from "..//Projects/images/ip.jpg"
-import Mm from "..//Projects/images/mm.jpg"
-import Pg from "..//Projects/images/pg.jpg"
+import photographyPage from "..//Projects/images/ip.jpg"
+import handcraftedLeader from "..//Projects/images/mm.jpg"
+import filterPage from "..//Projects/images/pg.jpg"
 
 
 
@@ -29,7 +29,7 @@ export class Projects extends Component {
               <div className="aboutContent">
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Ip} />
+                <Card.Img variant="top" src={photographyPage} />
                 <Card.Body>
                   <Card.Title>Photography</Card.Title>
                   <Card.Text>
@@ -40,7 +40,7 @@ export class Projects extends Component {
               </Card>
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Pg} />
+                <Card.Img variant="top" src={filterPage} />
                 <Card.Body>
                   <Card.Title>Filter App</Card.Title>
                   <Card.Text>
@@ -51,7 +51,7 @@ export class Projects extends Component {
               </Card>
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Mm} />
+                <Card.Img variant="top" src={handcraftedLeader} />
                 <Card.Body>
                   <Card.Title>Handcrafted leather</Card.Title>
                   <Card.Text>
