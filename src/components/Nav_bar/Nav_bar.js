@@ -59,9 +59,9 @@ class Nav_bar extends Component {
                 <li>
                   <Link to="/contact/" className="link" activeClassName="activeNav">  Contact </Link>
                 </li>
-                <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
-                <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /> </a></li>
-                <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebook"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
+                <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedinNav"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
+                <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithubNav"> <FontAwesomeIcon icon={faGithub} /> </a></li>
+                <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebookNav"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
               </ul>
             </div>
           :

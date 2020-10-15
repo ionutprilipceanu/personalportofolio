@@ -145,7 +145,7 @@
   display: none;
 }
 
-.logoLinkedin, .logoGithub, .logoFacebook {
+.logoLinkedinNav, .logoGithubNav, .logoFacebookNav {
   color: #282C34;
 }
 
@@ -156,7 +156,7 @@
   justify-content: center;
 }
 
-.logoLinkedin:hover, .logoFacebook:hover, .logoGithub:hover {
+.logoLinkedinNav:hover, .logoFacebookNav:hover, .logoGithubNav:hover {
   color: darkslategrey;
   transition-duration: 0.85s;
 }

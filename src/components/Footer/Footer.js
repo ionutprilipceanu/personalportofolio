@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import Link from 'gatsby-link';
 
 function Footer() {
@@ -12,17 +12,18 @@ function Footer() {
       </ul>
 
        <ul className="logoItemsDesktop">
-        <li><a href="https://www.facebook.com/mih.marian86" target="_blank" rel="noreferrer" className="logoItemDesktop"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
-        <li><a href="https://www.facebook.com/mih.marian86" target="_blank" rel="noreferrer" className="logoItemDesktop"> <FontAwesomeIcon icon={faInstagram} /> </a></li>
+        <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
+        <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /> </a></li>
+        <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebook"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
       </ul> 
 
       <ul className="componentePhone">
       </ul>
 
-       <ul className="logoItemsPhone">
-        <li><a href="https://www.facebook.com/mih.marian86" target="_blank" rel="noreferrer" className="logoItemPhone"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
-        <p>&copy;Iași România 2020</p>
-        <li><a href="https://www.facebook.com/mih.marian86" target="_blank" rel="noreferrer" className="logoItemPhone"> <FontAwesomeIcon icon={faInstagram} /> </a></li>
+      <ul className="logoItemsPhone">
+        <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
+        <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /> </a></li>
+        <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebook"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
       </ul> 
     </div>
   )
