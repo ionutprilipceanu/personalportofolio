@@ -4,6 +4,7 @@ import { Form } from 'react-bootstrap'
 import { Col } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 import Fade from "react-reveal/Fade"
+import { Card } from 'react-bootstrap'
 // import favicon from '..//Form_contact/'
 
 class Form_contact extends Component {
@@ -23,8 +24,10 @@ class Form_contact extends Component {
   
   render() {
   return (
-    <div className="continutForm">
-      
+
+    <div>
+      <Card.Title className="abouttitleForm"><span className="border-bottom">Contact</span> </Card.Title>
+      <div className="continutForm">
       <Form 
       className="formBody"
       method="post" 
@@ -36,7 +39,7 @@ class Form_contact extends Component {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="last-form-contact-up"  />
       <Fade left cascade>
-        <div className="titlu"><h1>Contact form</h1></div>
+        <div className="titlu"><h3>Contact form</h3></div>
         <Form.Row>
           <Form.Group as={Col} >
             <Form.Label htmlFor="name" >Name</Form.Label>
@@ -109,13 +112,13 @@ class Form_contact extends Component {
         {this.state.showText ?
         <Fade top cascade>
         <div className="titlu">
-          <h1>Contact info</h1>
+          <h3>Contact info</h3>
         </div>
         </Fade>
       :
       <Fade bottom cascade>
         <div className="titluShow">
-          <h1>Contact info</h1>
+          <h3>Contact info</h3>
 
           <div className="contactName">
           
@@ -135,6 +138,8 @@ class Form_contact extends Component {
         </Button>
       </div>
     </div>
+    </div>
+    
   ) 
   }
 }

@@ -30,6 +30,12 @@
   margin: 0 0 3% 0;
 }
 
+.abouttitleForm{
+  margin-left: 8%;
+  margin-bottom: -3%;
+  font-size: 35px;
+}
+
 .titluShow {
   margin: 0 0 3% 0;
   display: flex;
