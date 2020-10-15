@@ -18,6 +18,7 @@ function Footer() {
       </ul> 
 
       <ul className="componentePhone">
+        <p>&copy;Iași România 2020</p>
       </ul>
 
       <ul className="logoItemsPhone">

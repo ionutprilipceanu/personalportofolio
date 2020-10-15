@@ -66,21 +66,12 @@
     flex-direction: column;
   }
 
-  .componentePhone {
-    margin: 5% 5% 2.5% 5%;
+  .componentePhone p{
+    margin:5% 2.5% auto !important;
     letter-spacing: 1px;
-    display: flex !important;
-    flex-direction: row !important;
     list-style-type: none;
+    color: white !important;
     text-align: center;
-    justify-content: space-between;
-    color: white !important;
-  }
-
-  .componentePhone li a {
-    padding: 5px;
-    text-align: center !important;
-    color: white !important;
   }
 
   .logoItemsPhone {
@@ -122,18 +113,8 @@
   }
 
   .componentePhone {
-    margin: 5% 5% 2.5% 5%;
     letter-spacing: 1px;
-    display: flex !important;
-    flex-direction: row !important;
     list-style-type: none;
-    text-align: center;
-  }
-
-  .componentePhone li a {
-    padding: 5px;
-    text-align: center !important;
-    color: white !important;
   }
 
   .logoItemsPhone {
