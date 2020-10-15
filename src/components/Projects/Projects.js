@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Card, Button} from 'react-bootstrap'
 import "./Projects.css"
 import Fade from "react-reveal/Fade"
-import photography_page from "./images/photography_page.jpg"
-import handcrafted_leader from "./images/handcrafted_leather.jpg"
-import filter_page from "./images/filter_page.jpg"
+import photography_page from "..//Projects/images/photography_page.jpg"
+import handcrafted_leader from "..//Projects/images/handcrafted_leather.jpg"
+import filter_page from "..//Projects/images/filter_page.jpg"
 
 
 
