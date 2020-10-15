@@ -35,7 +35,7 @@ export class Projects extends Component {
                   <Card.Text>
                     HTML5, CSS3, JAVASCRIPT, jQuery
                   </Card.Text>
-                  <Button variant="primary" href="https://ionut-prilipceanu.com/" target="_blank" >Let' check</Button>
+                  <Button variant="primary" className="send_Btn" href="https://ionut-prilipceanu.com/" target="_blank" >Let' check</Button>
                 </Card.Body>
               </Card>
 
@@ -46,7 +46,7 @@ export class Projects extends Component {
                   <Card.Text>
                     React JS, CSS3, Bootstrap
                   </Card.Text>
-                  <Button variant="primary" href="https://photogallery-exercises.netlify.app/" target="_blank" >Let's check</Button>
+                  <Button variant="primary" className="send_Btn" href="https://photogallery-exercises.netlify.app/" target="_blank" >Let's check</Button>
                 </Card.Body>
               </Card>
 
@@ -57,7 +57,7 @@ export class Projects extends Component {
                   <Card.Text>
                     React JS, JAVASCRIPT, CSS3
                   </Card.Text>
-                  <Button variant="primary" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
+                  <Button variant="primary" className="send_Btn" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
                 </Card.Body>
               </Card>
                 

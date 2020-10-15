@@ -123,9 +123,9 @@ class Form_contact extends Component {
           <div className="contactName">
           
           <p>
-              Name: Marian Mihalache <br/>
-              Phone number: 0751684142 <br/>
-              E-mail: marian-mihalache@gmail.com
+              Name: Ionuț Prilipceanu <br/>
+              Phone number: (+40) 751 684 142 <br/>
+              E-mail: prilipceanu.ionut@gmail.com
           </p>
           </div>
         </div>

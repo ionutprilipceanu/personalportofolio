@@ -43,8 +43,14 @@
 }
 
 .send_Btn {
-  background-color: rgb(40,44,52) !important;
+  background-color: #282C34 !important;
   border-color: black !important;
+  border: 2px solid black;
+}
+
+.send_Btn:hover {
+  opacity: 0.85;
+  transition-duration: 0.8s;
 }
 
 .contactName {
