@@ -31,8 +31,8 @@ export default class index extends react.Component {
             <meta property="og:image:height" content="630"/>
             <link rel="icon" href={favicon} />
             <meta property="og:image" content="/images/cover-img.jpg"/>
-	          <meta property="og:image:width" content="1200"/>
-	          <meta property="og:image:height" content="630"></meta>
+	          <meta property="og:image:width" content="600"/>
+	          <meta property="og:image:height" content="315"></meta>
 
 
             {/* <!-- Open Graph / Facebook --> */}
@@ -41,8 +41,8 @@ export default class index extends react.Component {
             <meta property="og:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
             <meta property="og:description" content="Hello, my name is Ionuț and I am very fascinated regarding the technology around us, check in my portofolio."/>
             <meta property="og:image" content="/images/cover-img.jpg"/>
-	          <meta property="og:image:width" content="1200"/>
-	          <meta property="og:image:height" content="630"></meta>
+	          <meta property="og:image:width" content="600"/>
+	          <meta property="og:image:height" content="315"></meta>
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image"/>
