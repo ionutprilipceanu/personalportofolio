@@ -47,6 +47,10 @@
   border: 2px solid black;
 }
 
+.activeNavHomeBtn {
+  color: black;
+}
+
 .btn-start:hover{
   color: white;
   text-decoration: none;

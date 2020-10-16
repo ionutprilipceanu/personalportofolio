@@ -44,6 +44,10 @@
   color: white;
 }
 
+.nav-bar ul {
+  align-items: baseline;
+}
+
 .nav-bar li {
   height: 50px;
   padding: 15px 20px;
@@ -52,11 +56,6 @@
   cursor: pointer;
   transition: all 5s ease-out;
   color: white;
-}
-
-.nav-bar li:hover {
-  border-bottom: solid 5px yellow;
-  transition: all 0.75s ease-out;
 }
 
 .nav-bar li a {
@@ -73,6 +72,8 @@
   color: #282C34;;
   align-items: baseline;
   text-decoration: none;
+  margin: 0 7px;
+  cursor: pointer;
 }
 
 .link * {
@@ -83,10 +84,16 @@
   color:rgba(60, 105, 105, 0.5);
 }
 
-.link:hover { 
+.activeNavHome {
+  color:rgb(0, 0, 0);
+}
+
+.link:hover{ 
   color: rgb(60, 105, 105);
   transition-duration: 0.85s;
   text-decoration: none;
+  border-bottom: solid 5px yellow;
+  transition: all 0.75s ease-out;
 }
 
 .burger {
@@ -194,7 +201,7 @@
   
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 650px) {
   .burger {
     padding: 15px;
     transition-duration: 1s;

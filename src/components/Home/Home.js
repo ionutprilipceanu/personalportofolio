@@ -3,7 +3,7 @@ import './Home.css'
 import Fade from "react-reveal/Fade"
 import favicon from '..//..//..//static/images/favicon.png'
 import homeimage from "..//Home/images/home.jpg"
-import Link from 'gatsby-link'
+import {Link} from 'react-scroll'
 
 class Home extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Home extends Component {
   
   render() {
   return (
-    <div className="Intro">
+    <div className="Intro" id="home">
       <div>
         <img src={homeimage}
           alt="background_logo"
@@ -45,9 +45,16 @@ class Home extends Component {
             </div>
           </Fade>
           <div className="btn-all">
-            <Link to="/" className="btn-start">
-              Get started
-            </Link>
+            
+            <Link 
+                  to="about" 
+                  className="btn-start"
+                  activeClass ="activeNavHomeBtn"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+            > Get started </Link>
             
               <a className="btn-resume" href="https://drive.google.com/file/d/13S3nMbk6jCNDppwiHHSQYSdGdlf__ezt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Get resume</a>
             

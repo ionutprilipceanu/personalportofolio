@@ -25,7 +25,7 @@ class Form_contact extends Component {
   render() {
   return (
 
-    <div>
+    <div id="contact">
       <Card.Title className="abouttitleForm"><span className="border-bottom">Contact</span> </Card.Title>
       <div className="continutForm">
       <Form 

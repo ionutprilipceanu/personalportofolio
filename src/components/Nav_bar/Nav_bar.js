@@ -2,8 +2,9 @@ import React, {Component} from 'react'
 import './Nav_bar.css'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Link from 'gatsby-link';
+// import Link from 'gatsby-link';
 import logo from "..//Nav_bar/images/logo.png"
+import {Link} from 'react-scroll'
 
 
 
@@ -39,7 +40,7 @@ class Nav_bar extends Component {
       <div className="nav_body">
 
         <div className="logo">
-          <Link to="/" className="link" ><img src={logo} alt="Logo"/></Link>
+          <Link to="home" className="link" ><img src={logo} alt="Logo"/></Link>
         </div>
 
         <div>
@@ -48,16 +49,48 @@ class Nav_bar extends Component {
               
               <ul className="nav-bar">
                 <li>
-                  <Link to="/" className="link" activeClassName="activeNav"> Home </Link>
+                  <Link 
+                  to="home" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  > Home </Link>
                 </li>
                 <li>
-                  <Link to="/store/" className="link" activeClassName="activeNav"> About </Link>
+                <Link 
+                  to="about" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  > About </Link>
                 </li>
                 <li>
-                  <Link to="/cart/" className="link" activeClassName="activeNav"> Projects </Link>
+                  <Link 
+                  to="projects" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-140}
+                  duration={500}
+                  > Projects </Link>
                 </li>
                 <li>
-                  <Link to="/contact/" className="link" activeClassName="activeNav">  Contact </Link>
+                  <Link 
+                  to="contact" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  >  Contact </Link>
                 </li>
                 <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedinNav"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
                 <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithubNav"> <FontAwesomeIcon icon={faGithub} /> </a></li>
@@ -68,16 +101,48 @@ class Nav_bar extends Component {
           <div className="nav-barBack ">
             <ul className="nav-bar">
               <li>
-                <Link to="/" className="link" activeClassName="activeNav">  Home </Link>
+                <Link 
+                  to="home" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                > Home </Link>
               </li>
               <li>
-                <Link to="/store/" className="link" activeClassName="activeNav">  About </Link>
+                <Link 
+                  to="about" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                > About </Link>
               </li> 
               <li>
-                <Link to="/cart/" className="link" activeClassName="activeNav">  Projects </Link>
+                <Link 
+                  to="projects" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-140}
+                  duration={500}
+                > Projects </Link>
               </li>
               <li>
-                <Link to="/contact/" className="link" activeClassName="activeNav">  Contact </Link>
+                <Link 
+                  to="contact" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                >  Contact </Link>
               </li>
               <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
                 <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /> </a></li>
@@ -90,18 +155,50 @@ class Nav_bar extends Component {
         {this.state.hiderFalse ? 
         <div className="backgroundSide">
           <ul className="navSide">
-            <li>
-              <Link to="/" className="link" activeClassName="activeNav">  Home </Link>
-            </li>
-            <li>
-              <Link to="/store/" className="link" activeClassName="activeNav">  About </Link>
-            </li> 
-            <li>
-              <Link to="/cart/" className="link" activeClassName="activeNav">  Projects </Link>
-            </li>
-            <li>
-              <Link to="/contact/" className="link" activeClassName="activeNav">  Contact</Link>
-            </li>
+          <li>
+                <Link 
+                  to="home" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                > Home </Link>
+              </li>
+              <li>
+                <Link 
+                  to="about" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                > About </Link>
+              </li> 
+              <li>
+                <Link 
+                  to="projects" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-110}
+                  duration={500}
+                > Projects </Link>
+              </li>
+              <li>
+                <Link 
+                  to="contact" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >  Contact </Link>
+              </li>
             <li>
               <div className="logoItems">
                 <a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /></a>
@@ -119,17 +216,49 @@ class Nav_bar extends Component {
         :
         <div className="backgroundSideBack" >
             <ul className="navSide">
-              <li>
-                <Link to="/" className="link" activeClassName="activeNav"> Home </Link>
+            <li>
+                <Link 
+                  to="home" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                > Home </Link>
               </li>
               <li>
-                <Link to="/store/" className="link" activeClassName="activeNav"> About </Link>
+                <Link 
+                  to="about" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                > About </Link>
               </li> 
               <li>
-                <Link to="/cart/" className="link" activeClassName="activeNav"> Projects </Link>
+                <Link 
+                  to="projects" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-140}
+                  duration={500}
+                > Projects </Link>
               </li>
               <li>
-                <Link to="/contact/" className="link" activeClassName="activeNav"> Contact </Link>
+                <Link 
+                  to="contact" 
+                  className="link" 
+                  activeClass="activeNav"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                >  Contact </Link>
               </li>
             </ul>
             <ul className="navSideSecond">
