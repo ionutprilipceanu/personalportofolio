@@ -18,7 +18,7 @@ export default class index extends react.Component {
             {/* <!-- Primary Meta Tags --> */}
             <title>Ionuț Prilipceanu- Personal Portofolio | Iași  </title>
             <meta name="title" content="Ionuț Prilipceanu- Personal Portofolio | Iași  "/>
-            <meta name="description" content="Hello, my name is Ionuț and I am very fascinated regarding the technology around us, check in my portofolio."/>
+            <meta name="description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio."/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <meta name="keywords" content="web developer, web design, portofolio, portofolio for web design, design, frontend developer, developer, frontend job, facebook, jobs,"></meta>
             <meta name="author" content="Ionuț Prilipceanu"/>
@@ -39,7 +39,7 @@ export default class index extends react.Component {
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://metatags.io/"/>
             <meta property="og:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
-            <meta property="og:description" content="Hello, my name is Ionuț and I am very fascinated regarding the technology around us, check in my portofolio."/>
+            <meta property="og:description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio."/>
             <meta property="og:image" content="/images/cover-img.jpg"/>
 	          <meta property="og:image:width" content="600"/>
 	          <meta property="og:image:height" content="315"></meta>
@@ -48,7 +48,7 @@ export default class index extends react.Component {
             <meta property="twitter:card" content="summary_large_image"/>
             <meta property="twitter:url" content="https://metatags.io/"/>
             <meta property="twitter:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
-            <meta property="twitter:description" content="Hello, my name is Ionuț and I am very fascinated regarding the technology around us, check in my portofolio."/>
+            <meta property="twitter:description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio."/>
             <meta property="twitter:image" content="/images/cover-img.jpg"/>
           </Helmet>
 
