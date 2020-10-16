@@ -26,11 +26,11 @@ export default class index extends react.Component {
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
             <meta property="og:site_name" content="Ionuț Prilipceanu- Personal Portofolio | Iași "></meta>
-            <meta property="og:image" content="/images/cover-img.jpg"/>
-            <meta property="og:image:width" content="1200"/>
-            <meta property="og:image:height" content="630"/>
+            <meta property="og:image" content="/images/cover.jpg"/>
+            <meta property="og:image:width" content="600"/>
+            <meta property="og:image:height" content="315"/>
             <link rel="icon" href={favicon} />
-            <meta property="og:image" content="/images/cover-img.jpg"/>
+            <meta property="og:image" content="/images/cover.jpg"/>
 	          <meta property="og:image:width" content="600"/>
 	          <meta property="og:image:height" content="315"></meta>
 
@@ -40,7 +40,7 @@ export default class index extends react.Component {
             <meta property="og:url" content="https://metatags.io/"/>
             <meta property="og:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
             <meta property="og:description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio."/>
-            <meta property="og:image" content="/images/cover-img.jpg"/>
+            <meta property="og:image" content="/images/cover.jpg"/>
 	          <meta property="og:image:width" content="600"/>
 	          <meta property="og:image:height" content="315"></meta>
 
@@ -49,7 +49,7 @@ export default class index extends react.Component {
             <meta property="twitter:url" content="https://metatags.io/"/>
             <meta property="twitter:title" content="Ionuț Prilipceanu- Personal Portofolio | Iași "/>
             <meta property="twitter:description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio."/>
-            <meta property="twitter:image" content="/images/cover-img.jpg"/>
+            <meta property="twitter:image" content="/images/cover.jpg"/>
           </Helmet>
 
         <Nav_bar />
