@@ -55,9 +55,9 @@ class Nav_bar extends Component {
                   activeClass="activeNav"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-120}
                   duration={500}
-                  > Home </Link>
+                  >  Home </Link>
                 </li>
                 <li>
                 <Link 
@@ -137,7 +137,7 @@ class Nav_bar extends Component {
                 <Link 
                   to="contact" 
                   className="link" 
-                  activeClass="activeNav"
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={-120}
@@ -162,7 +162,7 @@ class Nav_bar extends Component {
                   activeClass="activeNav"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-200}
                   duration={500}
                 > Home </Link>
               </li>
@@ -173,7 +173,7 @@ class Nav_bar extends Component {
                   activeClass="activeNav"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-120}
                   duration={500}
                 > About </Link>
               </li> 

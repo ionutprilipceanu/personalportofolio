@@ -49,10 +49,10 @@ class Home extends Component {
             <Link 
                   to="about" 
                   className="btn-start"
-                  activeClass ="activeNavHomeBtn"
+                  activeClass ="activeNav"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-100}
                   duration={500}
             > Get started </Link>
             

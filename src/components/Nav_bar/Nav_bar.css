@@ -84,10 +84,6 @@
   color:rgba(60, 105, 105, 0.5);
 }
 
-.activeNavHome {
-  color:rgb(0, 0, 0);
-}
-
 .link:hover{ 
   color: rgb(60, 105, 105);
   transition-duration: 0.85s;
