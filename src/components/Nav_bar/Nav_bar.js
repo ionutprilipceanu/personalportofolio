@@ -212,6 +212,12 @@ class Nav_bar extends Component {
             <li>(+40) 751 684 142</li>
             <li>prilipceanu.ionut@gmail.com</li>
           </ul>
+
+          <button className="burger" onClick={ () => this.showNavBar()} onKeyDown={ () => this.showNavBar()}>
+          <div className="toggle" id="toggle1backgroundSide"></div>
+          <div className="toggle" id="toggle2backgroundSide"></div>
+          <div className="toggle" id="toggle3backgroundSide"></div>
+        </button>
         </div>
         :
         <div className="backgroundSideBack" >
@@ -266,14 +272,12 @@ class Nav_bar extends Component {
             <li>(+40) 751 684 142</li>
             <li>prilipceanu.ionut@gmail.com.com</li>
             </ul>
+            <button className="burger" onClick={ () => this.showNavBar()} onKeyDown={ () => this.showNavBar()}>
+              <div className="toggle" id="toggle1"></div>
+              <div className="toggle" id="toggle2"></div>
+              <div className="toggle" id="toggle3"></div>
+            </button>
         </div>}
-    
-
-        <button className="burger" onClick={ () => this.showNavBar()} onKeyDown={ () => this.showNavBar()}>
-          <div className="toggle"></div>
-          <div className="toggle"></div>
-          <div className="toggle"></div>
-        </button>
         
       </div>
     )

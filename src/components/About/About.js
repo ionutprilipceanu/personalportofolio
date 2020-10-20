@@ -44,7 +44,7 @@ export class About extends Component {
           </Card>
         </Fade>
 
-        <Fade right cascade>
+        <Fade left cascade>
           <div className="skillsContainer">
             <Card.Title className="cardSkills">Skills</Card.Title>
             <Card className="card-final">

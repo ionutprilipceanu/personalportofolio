@@ -21,11 +21,11 @@ export class Projects extends Component {
   render() {
     return (
       <div className="containerBodyCarder" id="projects">
-        <Fade left cascade>
+        <Fade bottom cascade>
           <Card className="about_body">
             <Card.Body>
               <Card.Title className="abouttitle"><span className="border-bottom">Projects</span> </Card.Title>
-              <div className="aboutContent">
+              <div className="aboutContentProjects">
 
               <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={photographyPage} alt="photographyPage"/>
