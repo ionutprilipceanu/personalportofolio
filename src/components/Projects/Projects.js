@@ -54,7 +54,7 @@ export class Projects extends Component {
                 <Card.Body>
                   <Card.Title>Handcrafted leather</Card.Title>
                   <Card.Text>
-                    React JS, JAVASCRIPT, CSS3
+                    Gatsby, React JS, JAVASCRIPT, CSS3
                   </Card.Text>
                   <Button variant="primary" className="send_Btn" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
                 </Card.Body>
