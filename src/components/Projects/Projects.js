@@ -6,6 +6,8 @@ import Fade from "react-reveal/Fade"
 import photographyPage from "..//Projects/images/profilePhotoA.jpg"
 import handcraftLeather from "..//Projects/images/profilePhotoB.jpg"
 import filterPage from "..//Projects/images/profilePhotoC.jpg"
+import passwordGenerator from "..//Projects/images/profilePhotoD.jpg"
+
 
 
 export class Projects extends Component {
@@ -57,6 +59,17 @@ export class Projects extends Component {
                     Gatsby, React JS, JAVASCRIPT, CSS3
                   </Card.Text>
                   <Button variant="primary" className="send_Btn" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
+                </Card.Body>
+              </Card>
+
+              <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={passwordGenerator} alt="passwordGenerator" />
+                <Card.Body>
+                  <Card.Title>Password Generator</Card.Title>
+                  <Card.Text>
+                    HTML5, JAVASCRIPT, SCSS, Less, CSS3
+                  </Card.Text>
+                  <Button variant="primary" className="send_Btn" href="https://password-create.netlify.app/" target="_blank" >Let's check</Button>
                 </Card.Body>
               </Card>
                 
