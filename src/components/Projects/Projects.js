@@ -43,17 +43,6 @@ export class Projects extends Component {
                 </Card>
 
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={filterPage} alt="filterPage" />
-                  <Card.Body>
-                    <Card.Title>Filter App</Card.Title>
-                    <Card.Text>
-                      React JS, CSS3, Bootstrap
-                    </Card.Text>
-                    <Button variant="primary" className="send_Btn" href="https://photogallery-exercises.netlify.app/" target="_blank" >Let's check</Button>
-                  </Card.Body>
-                </Card>
-
-                <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={handcraftLeather} alt="handcraftedLeader" />
                   <Card.Body>
                     <Card.Title>Handcrafted leather</Card.Title>
@@ -61,6 +50,17 @@ export class Projects extends Component {
                       Gatsby, React JS, JAVASCRIPT, CSS3
                     </Card.Text>
                     <Button variant="primary" className="send_Btn" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src={psychologicalOffice} alt="psychologicalOffice" />
+                  <Card.Body>
+                    <Card.Title>Psychological Office</Card.Title>
+                    <Card.Text>
+                      Gatsby, React JS, JAVASCRIPT, CSS3
+                    </Card.Text>
+                    <Button variant="primary" className="send_Btn" href="https://www.psiholog-iasi-teleman.com/" target="_blank" >Let's check</Button>
                   </Card.Body>
                 </Card>
               </div>
@@ -78,13 +78,13 @@ export class Projects extends Component {
                 </Card>
 
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={psychologicalOffice} alt="psychologicalOffice" />
+                  <Card.Img variant="top" src={filterPage} alt="filterPage" />
                   <Card.Body>
-                    <Card.Title>Psychological Office</Card.Title>
+                    <Card.Title>Filter App</Card.Title>
                     <Card.Text>
-                      Gatsby, React JS, JAVASCRIPT, CSS3
+                      React JS, CSS3, Bootstrap
                     </Card.Text>
-                    <Button variant="primary" className="send_Btn" href="https://www.psiholog-iasi-teleman.com/" target="_blank" >Let's check</Button>
+                    <Button variant="primary" className="send_Btn" href="https://photogallery-exercises.netlify.app/" target="_blank" >Let's check</Button>
                   </Card.Body>
                 </Card>
               </div>
