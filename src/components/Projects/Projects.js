@@ -48,7 +48,7 @@ export class Projects extends Component {
                   <Card.Body>
                     <Card.Title>Psychological Office</Card.Title>
                     <Card.Text>
-                      Gatsby, React JS, JAVASCRIPT, CSS3
+                      Gatsby, React JS, CSS3
                     </Card.Text>
                     <Button variant="primary" className="send_Btn" href="https://www.psiholog-iasi-teleman.com/" target="_blank" >Let's check</Button>
                   </Card.Body>
@@ -59,7 +59,7 @@ export class Projects extends Component {
                   <Card.Body>
                     <Card.Title>Handcrafted leather</Card.Title>
                     <Card.Text>
-                      Gatsby, React JS, JAVASCRIPT, CSS3
+                      Gatsby, React JS, CSS3
                     </Card.Text>
                     <Button variant="primary" className="send_Btn" href="https://handcrafted-leather.netlify.app/" target="_blank" >Let's check</Button>
                   </Card.Body>
@@ -72,7 +72,7 @@ export class Projects extends Component {
                   <Card.Body>
                     <Card.Title>Password Generator</Card.Title>
                     <Card.Text>
-                      HTML5, JAVASCRIPT, SCSS, Less, CSS3
+                      HTML5, JAVASCRIPT, SCSS
                     </Card.Text>
                     <Button variant="primary" className="send_Btn" href="https://password-create.netlify.app/" target="_blank" >Let's check</Button>
                   </Card.Body>
