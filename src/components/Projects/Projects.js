@@ -87,6 +87,17 @@ export class Projects extends Component {
                     <Button variant="primary" className="send_Btn" href="https://photogallery-exercises.netlify.app/" target="_blank" >Let's check</Button>
                   </Card.Body>
                 </Card>
+
+                <Card style={{ width: '18rem' }}>
+                  <Card.Img variant="top" src={filterPage} alt="filterPage" />
+                  <Card.Body>
+                    <Card.Title>on-movie app</Card.Title>
+                    <Card.Text>
+                      API, JSON, AJAX, Vanilla JS
+                    </Card.Text>
+                    <Button variant="primary" className="send_Btn" href="https://on-movie.netlify.app/" target="_blank" >Let's check</Button>
+                  </Card.Body>
+                </Card>
               </div>
                 
               </div>
