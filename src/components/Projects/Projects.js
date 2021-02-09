@@ -37,7 +37,7 @@ export class Projects extends Component {
                   <Card.Body>
                     <Card.Title>Photography</Card.Title>
                     <Card.Text>
-                      HTML5, CSS3, JAVASCRIPT, jQuery
+                      CSS3, JAVASCRIPT, jQuery
                     </Card.Text>
                     <Button variant="primary" className="send_Btn" href="https://ionut-prilipceanu.com/" target="_blank" >Let' check</Button>
                   </Card.Body>
