@@ -92,7 +92,7 @@ export class Projects extends Component {
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={onMovie} alt="filterPage" />
                   <Card.Body>
-                    <Card.Title>on-movie app</Card.Title>
+                    <Card.Title>On-movie app</Card.Title>
                     <Card.Text>
                       API, JSON, AJAX, Vanilla JS
                     </Card.Text>
