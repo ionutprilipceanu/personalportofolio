@@ -8,6 +8,7 @@ import handcraftLeather from "..//Projects/images/profilePhotoB.jpg"
 import filterPage from "..//Projects/images/profilePhotoC.jpg"
 import passwordGenerator from "..//Projects/images/profilePhotoD.jpg"
 import psychologicalOffice from "..//Projects/images/profilePhotoE.jpg"
+import onMovie from "..//Projects/images/profilePhotoF.jpg"
 
 
 
@@ -89,7 +90,7 @@ export class Projects extends Component {
                 </Card>
 
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={filterPage} alt="filterPage" />
+                  <Card.Img variant="top" src={onMovie} alt="filterPage" />
                   <Card.Body>
                     <Card.Title>on-movie app</Card.Title>
                     <Card.Text>
