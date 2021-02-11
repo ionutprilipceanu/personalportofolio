@@ -8,7 +8,7 @@ import handcraftLeather from "..//Projects/images/profilePhotoB.jpg"
 import filterPage from "..//Projects/images/profilePhotoC.jpg"
 import passwordGenerator from "..//Projects/images/profilePhotoD.jpg"
 import psychologicalOffice from "..//Projects/images/profilePhotoE.jpg"
-import onMovie from "..//Projects/images/profilePhotoFI.jpg"
+import onMovie from "..//Projects/images/profilePhotoF.jpg"
 
 
 
