@@ -11,10 +11,10 @@ import profilePhoto from "..//About/images/profilePhoto.jpg"
 export class About extends Component {
   constructor(props) {
     super(props)
-  
+
     this.state = {
-      size:"",
-      sort:"",
+      size: "",
+      sort: "",
     }
   }
 
@@ -30,14 +30,14 @@ export class About extends Component {
                 <div className="profilePhoto">
                   <img src={profilePhoto} alt="logo"></img>
                 </div>
-                
+
                 <div className="aboutSection">
-                <Card.Subtitle className="cardSubtitleSection">Hello, I’m Ionuț. Nice to meet you!</Card.Subtitle>
-                <Card.Text className="aboutText">
-                I am very fascinated regarding the technology around us and also I want to make some changes in my career, so the IT field would be a real challenge to start this journey. It is known that teamwork, communication and transparency are the key for a successful team, so these qualities I want to highlight to make a proper contribution to the development of departament and also to the company. Down below you can find the skills that I gained in this journey and I case is it fits your requirements, I look forward to seeing you in an interview.
+                  <Card.Subtitle className="cardSubtitleSection">Hello, I’m Ionuț. Nice to meet you!</Card.Subtitle>
+                  <Card.Text className="aboutText">
+                    I am very fascinated regarding the technology around us and also I want to make some changes in my career, so the IT field would be a real challenge to start this journey. It is known that teamwork, communication and transparency are the key for a successful team, so these qualities I want to highlight to make a proper contribution to the development of departament and also to the company. Down below you can find the skills that I gained in this journey and I case is it fits your requirements, I look forward to seeing you in an interview.
                 </Card.Text>
                 </div>
-                
+
               </div>
 
             </Card.Body>
@@ -48,7 +48,7 @@ export class About extends Component {
           <div className="skillsContainer">
             <Card.Title className="cardSkills">Skills</Card.Title>
             <Card className="card-final">
-            
+
               <Card className="carder_body">
                 <Card.Body>
                   <Card.Subtitle className="cardSubtitle">Technologies</Card.Subtitle>
@@ -87,7 +87,7 @@ export class About extends Component {
                 </Card.Body>
               </Card>
 
-            </Card> 
+            </Card>
           </div>
         </Fade>
       </div>

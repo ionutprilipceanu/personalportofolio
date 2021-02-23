@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Card, Button} from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 import "./Projects.css"
 import Fade from "react-reveal/Fade"
 import photographyPage from "..//Projects/images/profilePhotoA.jpg"
@@ -11,14 +11,13 @@ import psychologicalOffice from "..//Projects/images/profilePhotoE.jpg"
 import onMovie from "..//Projects/images/profilePhotoF.jpg"
 
 
-
 export class Projects extends Component {
   constructor(props) {
     super(props)
-  
+
     this.state = {
-      size:"",
-      sort:"",
+      size: "",
+      sort: "",
     }
   }
 
@@ -30,10 +29,10 @@ export class Projects extends Component {
             <Card.Body>
               <Card.Title className="abouttitle"><span className="border-bottom">Projects</span> </Card.Title>
               <div className="aboutContentProjects">
-                
+
                 <div className="firstContainer">
                   <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={photographyPage} alt="photographyPage"/>
+                    <Card.Img variant="top" src={photographyPage} alt="photographyPage" />
                     <Card.Body>
                       <Card.Title>Photography</Card.Title>
                       <Card.Text>
@@ -100,7 +99,7 @@ export class Projects extends Component {
                     </Card.Body>
                   </Card>
                 </div>
-                
+
               </div>
 
             </Card.Body>
