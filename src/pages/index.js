@@ -51,7 +51,6 @@ export default class index extends react.Component {
           <meta property="twitter:description" content="Hello, my name is Ionut and I am very fascinated about the technology around us, check it out my portofolio." />
           <meta property="twitter:image" content="/images/cover.jpg" />
         </Helmet>
-
         <Nav_bar />
         <Home />
         <About />
