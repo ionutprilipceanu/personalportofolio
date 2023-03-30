@@ -1,4 +1,4 @@
-.card-final{
+.card-final {
   display: flex;
   flex-direction: row;
   border: none;
@@ -8,35 +8,29 @@
 }
 
 .carder_body {
-  margin: 2% 2% 2% 2%;
+  margin: 2%;
   display: flex;
   flex-direction: row;
   width: 300px;
   box-shadow: 8px 8px 16px rgba(30, 30, 30, 0.3);
+  transition: all 0.5s ease 0s;
 }
 
 .carder_body:hover {
-  translate: 20px;
-  animation-name: myanimation;
-  animation-duration: 0.5s;
+  transform: translateY(-20px);
 }
 
-
-@keyframes myanimation {
-  0% {top: 20px;}
-  100% {top: -20px;}
-}
-
-.carder_body h1, p {
+.carder_body h1,
+p {
   color: black;
 }
 
-.abouttitle{
+.abouttitle {
   margin-left: 5%;
   font-size: 35px;
 }
 
-.border-bottom{
+.border-bottom {
   border-bottom: 2px solid yellow !important;
   width: 50px;
   height: 2px;
@@ -45,13 +39,13 @@
 .cardSubtitle {
   text-align: center;
   font-size: 20px;
-  margin: 2% 0 0 0 ;
+  margin: 2% 0 0 0;
 }
 
 .cardSkills {
   text-align: center;
   font-size: 35px;
-  padding: 2% 0 0 0 ;
+  padding: 2% 0 0 0;
 }
 
 .cardText {
@@ -62,21 +56,21 @@
 
 .cardSubtitleSection {
   font-size: 20px;
-  margin: 2% 0 0 0 ;
+  margin: 2% 0 0 0;
 }
 
-.aboutContent{
+.aboutContent {
   display: flex;
   flex-direction: row;
 }
 
-.aboutSection{
+.aboutSection {
   width: 650px;
   text-align: justify;
   margin: 5%;
 }
 
-.profilePhoto img{
+.profilePhoto img {
   width: 300px;
   border-radius: 50%;
   margin: 5%;
@@ -84,7 +78,7 @@
 
 .bottomLine {
   width: 100%;
-  background-color: #DFDFDF;
+  background-color: #dfdfdf;
   height: 1px;
   margin: 5% 0;
 }
@@ -95,20 +89,19 @@
 }
 
 @media screen and (max-width: 900px) {
-  .aboutContent{
+  .aboutContent {
     width: 100%;
     display: flex;
-
   }
 
-  .aboutSection{
+  .aboutSection {
     width: 95%;
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
     margin: 0 auto;
   }
-  
+
   .profilePhoto {
     width: auto;
     border-radius: 50%;
@@ -116,39 +109,41 @@
   }
 
   .card {
-    margin:2% !important;
+    margin: 2% !important;
     width: 96% !important;
   }
 }
 
 @media screen and (max-width: 650px) {
-
-  .aboutContent{
+  .aboutContent {
     width: 96%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
   }
 
-  .aboutSection{
+  .aboutSection {
     width: 95%;
     text-align: justify;
     margin: 0 auto;
   }
-  
+
   .profilePhoto img {
     border-radius: 50%;
     margin: 0 auto;
   }
 
-  .card-final{
+  .card-final {
     flex-direction: column;
   }
 
-  .carder_body{
-    align-items: center;
-    margin: 2%;
-    width: 96%;
+  .carder_body {
+    margin: 4% 2% !important;
   }
 
+  .carder_body {
+    align-items: center;
+    margin: 10%;
+    width: 96%;
+  }
 }
