@@ -64,4 +64,9 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
+  {
+    "engines": {
+      "node": ">=15.0.0"
+    }
+  }
 }
