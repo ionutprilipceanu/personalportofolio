@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
-import './Nav_bar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import Link from 'gatsby-link';
+import React, { Component } from "react"
+import "./Nav_bar.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 import logo from "..//Nav_bar/images/logo.png"
-import { Link } from 'react-scroll'
+import { Link } from "react-scroll"
 
-
-class Nav_bar extends Component {
-
+class NavBar extends Component {
   constructor(props) {
     super(props)
 
@@ -20,7 +21,6 @@ class Nav_bar extends Component {
     }
   }
 
-
   showNavBar() {
     this.setState({
       hider: !this.state.hider,
@@ -28,21 +28,18 @@ class Nav_bar extends Component {
     })
   }
 
-
   render() {
-
-
     return (
       <div className="nav_body">
-
         <div className="logo">
-          <Link to="home" className="link" ><img src={logo} alt="Logo" /></Link>
+          <Link to="home" className="link">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
 
         <div>
-          {this.state.hider ?
+          {this.state.hider ? (
             <div className="nav-bar ">
-
               <ul className="nav-bar">
                 <li>
                   <Link
@@ -53,7 +50,10 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={-120}
                     duration={500}
-                  >  Home </Link>
+                  >
+                    {" "}
+                    Home{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -62,10 +62,14 @@ class Nav_bar extends Component {
                     activeClass="activeNav"
                     spy={true}
                     smooth={true}
-                    offset={-120}
+                    offset={-140}
                     duration={500}
-                  > About </Link>
+                  >
+                    {" "}
+                    About{" "}
+                  </Link>
                 </li>
+
                 <li>
                   <Link
                     to="projects"
@@ -73,9 +77,12 @@ class Nav_bar extends Component {
                     activeClass="activeNav"
                     spy={true}
                     smooth={true}
-                    offset={-140}
+                    offset={-120}
                     duration={500}
-                  > Projects </Link>
+                  >
+                    {" "}
+                    Projects{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -86,14 +93,47 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={-120}
                     duration={500}
-                  >  Contact </Link>
+                  >
+                    {" "}
+                    Contact{" "}
+                  </Link>
                 </li>
-                <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedinNav"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
-                <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithubNav"> <FontAwesomeIcon icon={faGithub} /> </a></li>
-                <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebookNav"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoLinkedinNav"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faLinkedin} />{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/ionutprilipceanu"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoGithubNav"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faGithub} />{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/ionut.prilipceanu93/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoFacebookNav"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faFacebook} />{" "}
+                  </a>
+                </li>
               </ul>
             </div>
-            :
+          ) : (
             <div className="nav-barBack ">
               <ul className="nav-bar">
                 <li>
@@ -105,7 +145,10 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={0}
                     duration={500}
-                  > Home </Link>
+                  >
+                    {" "}
+                    Home{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -116,7 +159,10 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={-120}
                     duration={500}
-                  > About </Link>
+                  >
+                    {" "}
+                    About{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -127,7 +173,10 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={-140}
                     duration={500}
-                  > Projects </Link>
+                  >
+                    {" "}
+                    Projects{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -138,17 +187,50 @@ class Nav_bar extends Component {
                     smooth={true}
                     offset={-120}
                     duration={500}
-                  >  Contact </Link>
+                  >
+                    {" "}
+                    Contact{" "}
+                  </Link>
                 </li>
-                <li><a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /> </a></li>
-                <li><a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /> </a></li>
-                <li><a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebook"> <FontAwesomeIcon icon={faFacebook} /> </a></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoLinkedin"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faLinkedin} />{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/ionutprilipceanu"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoGithub"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faGithub} />{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/ionut.prilipceanu93/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoFacebook"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faFacebook} />{" "}
+                  </a>
+                </li>
               </ul>
-            </div>}
+            </div>
+          )}
         </div>
 
-
-        {this.state.hiderFalse ?
+        {this.state.hiderFalse ? (
           <div className="backgroundSide">
             <ul className="navSide">
               <li>
@@ -160,7 +242,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-200}
                   duration={500}
-                > Home </Link>
+                >
+                  {" "}
+                  Home{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -171,7 +256,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                > About </Link>
+                >
+                  {" "}
+                  About{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -182,7 +270,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-110}
                   duration={500}
-                > Projects </Link>
+                >
+                  {" "}
+                  Projects{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -193,13 +284,40 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-100}
                   duration={500}
-                >  Contact </Link>
+                >
+                  {" "}
+                  Contact{" "}
+                </Link>
               </li>
               <li>
                 <div className="logoItems">
-                  <a href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/" target="_blank" rel="noreferrer" className="logoLinkedin"> <FontAwesomeIcon icon={faLinkedin} /></a>
-                  <a href="https://github.com/ionutprilipceanu" target="_blank" rel="noreferrer" className="logoGithub"> <FontAwesomeIcon icon={faGithub} /></a>
-                  <a href="https://www.facebook.com/ionut.prilipceanu93/" target="_blank" rel="noreferrer" className="logoFacebook"> <FontAwesomeIcon icon={faFacebook} /></a>
+                  <a
+                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoLinkedin"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a
+                    href="https://github.com/ionutprilipceanu"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoGithub"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/ionut.prilipceanu93/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="logoFacebook"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
                 </div>
               </li>
             </ul>
@@ -209,14 +327,18 @@ class Nav_bar extends Component {
               <li>prilipceanu.ionut@gmail.com</li>
             </ul>
 
-            <button className="burger" onClick={() => this.showNavBar()} onKeyDown={() => this.showNavBar()}>
+            <button
+              className="burger"
+              onClick={() => this.showNavBar()}
+              onKeyDown={() => this.showNavBar()}
+            >
               <div className="toggle" id="toggle1backgroundSide"></div>
               <div className="toggle" id="toggle2backgroundSide"></div>
               <div className="toggle" id="toggle3backgroundSide"></div>
             </button>
           </div>
-          :
-          <div className="backgroundSideBack" >
+        ) : (
+          <div className="backgroundSideBack">
             <ul className="navSide">
               <li>
                 <Link
@@ -227,7 +349,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={0}
                   duration={500}
-                > Home </Link>
+                >
+                  {" "}
+                  Home{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -238,7 +363,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                > About </Link>
+                >
+                  {" "}
+                  About{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -249,7 +377,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-140}
                   duration={500}
-                > Projects </Link>
+                >
+                  {" "}
+                  Projects{" "}
+                </Link>
               </li>
               <li>
                 <Link
@@ -260,7 +391,10 @@ class Nav_bar extends Component {
                   smooth={true}
                   offset={-120}
                   duration={500}
-                >  Contact </Link>
+                >
+                  {" "}
+                  Contact{" "}
+                </Link>
               </li>
             </ul>
             <ul className="navSideSecond">
@@ -268,16 +402,20 @@ class Nav_bar extends Component {
               <li>(+40) 751 684 142</li>
               <li>prilipceanu.ionut@gmail.com.com</li>
             </ul>
-            <button className="burger" onClick={() => this.showNavBar()} onKeyDown={() => this.showNavBar()}>
+            <button
+              className="burger"
+              onClick={() => this.showNavBar()}
+              onKeyDown={() => this.showNavBar()}
+            >
               <div className="toggle" id="toggle1"></div>
               <div className="toggle" id="toggle2"></div>
               <div className="toggle" id="toggle3"></div>
             </button>
-          </div>}
-
+          </div>
+        )}
       </div>
     )
   }
 }
 
-export default Nav_bar;
+export default NavBar
