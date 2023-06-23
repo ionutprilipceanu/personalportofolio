@@ -3,7 +3,7 @@ import "./Form_contact.css"
 import { Form } from "react-bootstrap"
 import { Col } from "react-bootstrap"
 import { Button } from "react-bootstrap"
-import Fade from "react-reveal/Fade"
+// import Fade from "react-reveal/Fade"
 import { Card } from "react-bootstrap"
 // import favicon from '..//Form_contact/'
 
@@ -43,87 +43,87 @@ export class FormContact extends Component {
               name="form-name"
               value="last-form-contact-up"
             />
-            <Fade left cascade>
-              <div className="titlu">
-                <h3>Contact form</h3>
-              </div>
-              <Form.Group as={Col}>
-                <Form.Label htmlFor="name">Name</Form.Label>
-                <Form.Control
-                  id="name-input"
-                  type="text"
-                  name="name"
-                  placeholder="Enter name"
-                  required
-                  onChange={this.handInput}
-                />
-              </Form.Group>
+            {/* <Fade left cascade> */}
+            <div className="titlu">
+              <h3>Contact form</h3>
+            </div>
+            <Form.Group as={Col}>
+              <Form.Label htmlFor="name">Name</Form.Label>
+              <Form.Control
+                id="name-input"
+                type="text"
+                name="name"
+                placeholder="Enter name"
+                required
+                onChange={this.handInput}
+              />
+            </Form.Group>
 
-              <Form.Group as={Col}>
-                <Form.Label htmlFor="phone">Phone</Form.Label>
-                <Form.Control
-                  placeholder="Enter phone number"
-                  id="phone-input"
-                  type="text"
-                  name="phone"
-                  required
-                  onChange={this.handInput}
-                />
-              </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label htmlFor="phone">Phone</Form.Label>
+              <Form.Control
+                placeholder="Enter phone number"
+                id="phone-input"
+                type="text"
+                name="phone"
+                required
+                onChange={this.handInput}
+              />
+            </Form.Group>
 
-              <Form.Group as={Col}>
-                <Form.Label htmlFor="email">Email</Form.Label>
-                <Form.Control
-                  id="address-input"
-                  type="email"
-                  name="address"
-                  placeholder="Enter email address"
-                  required
-                  onChange={this.handInput}
-                />
-              </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Control
+                id="address-input"
+                type="email"
+                name="address"
+                placeholder="Enter email address"
+                required
+                onChange={this.handInput}
+              />
+            </Form.Group>
 
-              <Form.Group>
-                <Form.Label>Enter your message</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows="5"
-                  columns="2"
-                  id="text-area"
-                  type="text"
-                  name="comment"
-                  required
-                  onChange={this.handInput}
-                />
-              </Form.Group>
+            <Form.Group>
+              <Form.Label>Enter your message</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows="5"
+                columns="2"
+                id="text-area"
+                type="text"
+                name="comment"
+                required
+                onChange={this.handInput}
+              />
+            </Form.Group>
 
-              <Button variant="primary" type="submit" className="send_Btn">
-                Submit
-              </Button>
-            </Fade>
+            <Button variant="primary" type="submit" className="send_Btn">
+              Submit
+            </Button>
+            {/* </Fade> */}
           </Form>
 
           <div className="contactInfoForm">
             {this.state.showText ? (
-              <Fade top cascade>
-                <div className="titlu">
-                  <h3>Contact info</h3>
-                </div>
-              </Fade>
+              // <Fade top cascade>
+              <div className="titlu">
+                <h3>Contact info</h3>
+              </div>
             ) : (
-              <Fade bottom cascade>
-                <div className="titluShow">
-                  <h3>Contact info</h3>
+              // </Fade>
+              // <Fade bottom cascade>
+              <div className="titluShow">
+                <h3>Contact info</h3>
 
-                  <div className="contactName">
-                    <p>
-                      Name: Ionuț Prilipceanu <br />
-                      Phone number: (+40) 751 684 142 <br />
-                      E-mail: prilipceanu.ionut@gmail.com
-                    </p>
-                  </div>
+                <div className="contactName">
+                  <p>
+                    Name: Ionuț Prilipceanu <br />
+                    Phone number: (+40) 751 684 142 <br />
+                    E-mail: prilipceanu.ionut@gmail.com
+                  </p>
                 </div>
-              </Fade>
+              </div>
+              // </Fade>
             )}
 
             <Button
