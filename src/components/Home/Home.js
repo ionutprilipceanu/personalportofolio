@@ -1,26 +1,19 @@
-import React, { Component } from "react"
+import React from "react"
 import "./Home.css"
-// import Fade from "react-reveal/Fade"
 import favicon from "..//..//..//static/images/favicon.png"
 import homeimage from "..//Home/images/home.jpg"
 import { Link } from "react-scroll"
+import Reveal from "..//Reveal"
 
-export class Home extends Component {
-  constructor(props) {
-    super(props)
+const Home = () => {
+  return (
+    <div className="Intro" id="home">
+      <div>
+        <img src={homeimage} alt="background_logo" />
+      </div>
 
-    this.state = {}
-  }
-
-  render() {
-    return (
-      <div className="Intro" id="home">
-        <div>
-          <img src={homeimage} alt="background_logo" />
-        </div>
-        {/* <Fade left cascade> */}
-        <div className="contactInfoHome">
-          {/* <Fade bottom cascade> */}
+      <div className="contactInfoHome">
+        <Reveal>
           <div className="titluShow">
             <h1>Personal portofolio</h1>
 
@@ -33,35 +26,33 @@ export class Home extends Component {
               </p>
             </div>
           </div>
-          {/* </Fade> */}
-          <div className="btn-all">
-            <Link
-              to="about"
-              className="btn-start"
-              activeClass="activeNav"
-              spy={true}
-              smooth={true}
-              offset={-140}
-              duration={500}
-            >
-              {" "}
-              Get started{" "}
-            </Link>
+        </Reveal>
+        <div className="btn-all">
+          <Link
+            to="about"
+            className="btn-start"
+            activeClass="activeNav"
+            spy={true}
+            smooth={true}
+            offset={-140}
+            duration={500}
+          >
+            {" "}
+            Get started{" "}
+          </Link>
 
-            <a
-              className="btn-resume"
-              href="https://drive.google.com/file/d/1ZBVf8yZSdpwimMclZAsb2k5iOXRwkOR_/view"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get resume
-            </a>
-          </div>
+          <a
+            className="btn-resume"
+            href="https://drive.google.com/file/d/1ZBVf8yZSdpwimMclZAsb2k5iOXRwkOR_/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get resume
+          </a>
         </div>
-        {/* </Fade> */}
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Home

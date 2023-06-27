@@ -6,7 +6,6 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-// import Link from 'gatsby-link';
 
 function Footer() {
   return (

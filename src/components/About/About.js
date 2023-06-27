@@ -1,24 +1,14 @@
-import React, { Component } from "react"
+import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Card } from "react-bootstrap"
 import "./About.css"
-// import Fade from "react-reveal/Fade"
 import profilePhoto from "..//About/images/profilePhoto.jpg"
+import Reveal from "..//Reveal"
 
-export class About extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      size: "",
-      sort: "",
-    }
-  }
-
-  render() {
-    return (
-      <div className="containerBodyCarder" id="about">
-        {/* <Fade left cascade> */}
+const About = () => {
+  return (
+    <div className="containerBodyCarder" id="about">
+      <Reveal>
         <Card className="about_body">
           <Card.Body>
             <Card.Title className="abouttitle">
@@ -46,9 +36,9 @@ export class About extends Component {
             </div>
           </Card.Body>
         </Card>
-        {/* </Fade> */}
+      </Reveal>
 
-        {/* <Fade left cascade> */}
+      <Reveal>
         <div className="skillsContainer">
           <Card.Title className="cardSkills">Skills</Card.Title>
           <Card className="card-final">
@@ -95,10 +85,9 @@ export class About extends Component {
             </Card>
           </Card>
         </div>
-        {/* </Fade> */}
-      </div>
-    )
-  }
+      </Reveal>
+    </div>
+  )
 }
 
 export default About
