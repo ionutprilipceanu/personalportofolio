@@ -15,7 +15,7 @@ const Home = () => {
       <div className="contactInfoHome">
         <Reveal>
           <div className="titluShow">
-            <h1>Personal portofolio</h1>
+            <h1>Personal portfolio</h1>
 
             <div className="contactName">
               <img src={favicon} alt="logo" className="contactLogo" />
