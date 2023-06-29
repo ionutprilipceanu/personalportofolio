@@ -26,30 +26,31 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </Reveal>
-        <div className="btn-all">
-          <Link
-            to="about"
-            className="btn-start"
-            activeClass="activeNav"
-            spy={true}
-            smooth={true}
-            offset={-140}
-            duration={500}
-          >
-            {" "}
-            Get started{" "}
-          </Link>
 
-          <a
-            className="btn-resume"
-            href="https://drive.google.com/file/d/1ZBVf8yZSdpwimMclZAsb2k5iOXRwkOR_/view"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get resume
-          </a>
-        </div>
+          <div className="btn-all">
+            <Link
+              to="about"
+              className="btn-start"
+              activeClass="activeNav"
+              spy={true}
+              smooth={true}
+              offset={-140}
+              duration={500}
+            >
+              {" "}
+              Get started{" "}
+            </Link>
+
+            <a
+              className="btn-resume"
+              href="https://drive.google.com/file/d/1ZBVf8yZSdpwimMclZAsb2k5iOXRwkOR_/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get resume
+            </a>
+          </div>
+        </Reveal>
       </div>
     </div>
   )
