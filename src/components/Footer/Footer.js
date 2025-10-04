@@ -1,94 +1,54 @@
 import React from "react"
 import "./Footer.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/",
+    icon: faLinkedin,
+    className: "logoLinkedin",
+  },
+  {
+    href: "https://github.com/ionutprilipceanu",
+    icon: faGithub,
+    className: "logoGithub",
+  },
+  {
+    href: "https://www.facebook.com/ionut.prilipceanu93/",
+    icon: faFacebook,
+    className: "logoFacebook",
+  },
+]
 
 function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  const renderSocialIcons = (className) => (
+    <ul className={className}>
+      {socialLinks.map(({ href, icon, className }) => (
+        <li key={href}>
+          <a href={href} target="_blank" rel="noreferrer" className={className}>
+            <FontAwesomeIcon icon={icon} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+
+  const renderCopyright = (className) => (
+    <ul className={className}>
+      <p>&copy; Iași România {currentYear}</p>
+    </ul>
+  )
+
   return (
     <div className="footer">
-      <ul className="componenteDesktop">
-        <p>&copy;Iași România 2023</p>
-      </ul>
+      {renderCopyright("componenteDesktop")}
+      {renderSocialIcons("logoItemsDesktop")}
 
-      <ul className="logoItemsDesktop">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
-            target="_blank"
-            rel="noreferrer"
-            className="logoLinkedin"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faLinkedin} />{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/ionutprilipceanu"
-            target="_blank"
-            rel="noreferrer"
-            className="logoGithub"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faGithub} />{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/ionut.prilipceanu93/"
-            target="_blank"
-            rel="noreferrer"
-            className="logoFacebook"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faFacebook} />{" "}
-          </a>
-        </li>
-      </ul>
-
-      <ul className="componentePhone">
-        <p>&copy;Iași România 2023</p>
-      </ul>
-
-      <ul className="logoItemsPhone">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
-            target="_blank"
-            rel="noreferrer"
-            className="logoLinkedin"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faLinkedin} />{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/ionutprilipceanu"
-            target="_blank"
-            rel="noreferrer"
-            className="logoGithub"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faGithub} />{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/ionut.prilipceanu93/"
-            target="_blank"
-            rel="noreferrer"
-            className="logoFacebook"
-          >
-            {" "}
-            <FontAwesomeIcon icon={faFacebook} />{" "}
-          </a>
-        </li>
-      </ul>
+      {renderCopyright("componentePhone")}
+      {renderSocialIcons("logoItemsPhone")}
     </div>
   )
 }

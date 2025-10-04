@@ -21,7 +21,7 @@ export const items = [
     src: psychologicalOffice,
     title: "Psychological Office",
     Technologies: "Gatsby, React JS, CSS",
-    link: "https://www.psiholog-iasi-teleman.com/",
+    link: "https://psihoterapeutiasi.com/",
   },
   {
     key: 9,

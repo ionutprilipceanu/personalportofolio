@@ -1,421 +1,104 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import "./Nav_bar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
-import logo from "..//Nav_bar/images/logo.png"
+import { faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import logo from "../Nav_bar/images/logo.png"
 import { Link } from "react-scroll"
 
-class NavBar extends Component {
-  constructor(props) {
-    super(props)
+const navLinks = [
+  { to: "home", label: "Home", offset: -110 },
+  { to: "about", label: "About", offset: -110 },
+  { to: "projects", label: "Projects", offset: -110 },
+  { to: "contact", label: "Contact", offset: -110 },
+]
 
-    this.state = {
-      hider: true,
-      hiderFalse: false,
-      size: "",
-      sort: "",
-    }
-  }
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/",
+    icon: faLinkedin,
+    className: "logoLinkedin",
+  },
+  {
+    href: "https://github.com/ionutprilipceanu",
+    icon: faGithub,
+    className: "logoGithub",
+  },
+  {
+    href: "https://www.facebook.com/ionut.prilipceanu93/",
+    icon: faFacebook,
+    className: "logoFacebook",
+  },
+]
 
-  showNavBar() {
-    this.setState({
-      hider: !this.state.hider,
-      hiderFalse: !this.state.hiderFalse,
-    })
-  }
+const NavLinks = ({ links, className }) => (
+  <ul className={className}>
+    {links.map(({ to, label, offset }) => (
+      <li key={to}>
+        <Link
+          to={to}
+          className="link"
+          activeClass="activeNav"
+          spy={true}
+          smooth={true}
+          offset={offset}
+          duration={500}
+        >
+          {label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)
 
-  render() {
-    return (
-      <div className="nav_body">
-        <div className="logo">
-          <Link to="home" className="link">
-            <img src={logo} alt="Logo" />
-          </Link>
-        </div>
+const SocialLinks = ({ className }) => (
+  <ul className={className}>
+    {socialLinks.map(({ href, icon, className }) => (
+      <li key={href}>
+        <a href={href} target="_blank" rel="noreferrer" className={className}>
+          <FontAwesomeIcon icon={icon} />
+        </a>
+      </li>
+    ))}
+  </ul>
+)
 
-        <div>
-          {this.state.hider ? (
-            <div className="nav-bar ">
-              <ul className="nav-bar">
-                <li>
-                  <Link
-                    to="home"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {" "}
-                    Home{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="about"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-140}
-                    duration={500}
-                  >
-                    {" "}
-                    About{" "}
-                  </Link>
-                </li>
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false)
 
-                <li>
-                  <Link
-                    to="projects"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {" "}
-                    Projects{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="contact"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {" "}
-                    Contact{" "}
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoLinkedinNav"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faLinkedin} />{" "}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/ionutprilipceanu"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoGithubNav"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faGithub} />{" "}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/ionut.prilipceanu93/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoFacebookNav"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faFacebook} />{" "}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          ) : (
-            <div className="nav-barBack ">
-              <ul className="nav-bar">
-                <li>
-                  <Link
-                    to="home"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    {" "}
-                    Home{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="about"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {" "}
-                    About{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="projects"
-                    className="link"
-                    activeClass="activeNav"
-                    spy={true}
-                    smooth={true}
-                    offset={-140}
-                    duration={500}
-                  >
-                    {" "}
-                    Projects{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="contact"
-                    className="link"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {" "}
-                    Contact{" "}
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoLinkedin"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faLinkedin} />{" "}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/ionutprilipceanu"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoGithub"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faGithub} />{" "}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/ionut.prilipceanu93/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoFacebook"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faFacebook} />{" "}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-
-        {this.state.hiderFalse ? (
-          <div className="backgroundSide">
-            <ul className="navSide">
-              <li>
-                <Link
-                  to="home"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-200}
-                  duration={500}
-                >
-                  {" "}
-                  Home{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="about"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
-                >
-                  {" "}
-                  About{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="projects"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-110}
-                  duration={500}
-                >
-                  {" "}
-                  Projects{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="contact"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-                >
-                  {" "}
-                  Contact{" "}
-                </Link>
-              </li>
-              <li>
-                <div className="logoItems">
-                  <a
-                    href="https://www.linkedin.com/in/ionu%C5%A3-prilipceanu-20534ab0/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoLinkedin"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faLinkedin} />
-                  </a>
-                  <a
-                    href="https://github.com/ionutprilipceanu"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoGithub"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/ionut.prilipceanu93/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="logoFacebook"
-                  >
-                    {" "}
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </a>
-                </div>
-              </li>
-            </ul>
-            <ul className="navSideSecond">
-              <li>Ionuț Prilipceanu</li>
-              <li>(+40) 751 684 142</li>
-              <li>prilipceanu.ionut@gmail.com</li>
-            </ul>
-
-            <button
-              className="burger"
-              onClick={() => this.showNavBar()}
-              onKeyDown={() => this.showNavBar()}
-            >
-              <div className="toggle" id="toggle1backgroundSide"></div>
-              <div className="toggle" id="toggle2backgroundSide"></div>
-              <div className="toggle" id="toggle3backgroundSide"></div>
-            </button>
-          </div>
-        ) : (
-          <div className="backgroundSideBack">
-            <ul className="navSide">
-              <li>
-                <Link
-                  to="home"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                >
-                  {" "}
-                  Home{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="about"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
-                >
-                  {" "}
-                  About{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="projects"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-140}
-                  duration={500}
-                >
-                  {" "}
-                  Projects{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="contact"
-                  className="link"
-                  activeClass="activeNav"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
-                >
-                  {" "}
-                  Contact{" "}
-                </Link>
-              </li>
-            </ul>
-            <ul className="navSideSecond">
-              <li>Ionuț Prilipceanu</li>
-              <li>(+40) 751 684 142</li>
-              <li>prilipceanu.ionut@gmail.com.com</li>
-            </ul>
-            <button
-              className="burger"
-              onClick={() => this.showNavBar()}
-              onKeyDown={() => this.showNavBar()}
-            >
-              <div className="toggle" id="toggle1"></div>
-              <div className="toggle" id="toggle2"></div>
-              <div className="toggle" id="toggle3"></div>
-            </button>
-          </div>
-        )}
+  return (
+    <nav className="nav_body">
+      <div className="logo">
+        <Link to="home" className="link">
+          <img src={logo} alt="Logo" />
+        </Link>
       </div>
-    )
-  }
+
+      <div className={isOpen ? "nav-barBack" : "nav-bar"}>
+        <NavLinks links={navLinks} className="nav-bar" />
+        <SocialLinks className="nav-bar social-icons" />
+      </div>
+
+      <div className={isOpen ? "backgroundSide" : "backgroundSideBack"}>
+        <NavLinks links={navLinks} className="navSide" />
+        <ul className="navSideSecond">
+          <li>Ionuț Prilipceanu</li>
+          <li>(+40) 751 684 142</li>
+          <li>prilipceanu.ionut@gmail.com</li>
+        </ul>
+        <SocialLinks className="logoItems" />
+
+        <button
+          className="burger"
+          onClick={() => setIsOpen(!isOpen)}
+          onKeyDown={() => setIsOpen(!isOpen)}
+        >
+          <div className="toggle"></div>
+          <div className="toggle"></div>
+          <div className="toggle"></div>
+        </button>
+      </div>
+    </nav>
+  )
 }
 
 export default NavBar
