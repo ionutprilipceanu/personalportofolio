@@ -32,7 +32,7 @@ const HomeButtons = () => (
 
     <a
       className="btn-resume"
-      href="https://drive.google.com/file/d/1ZBVf8yZSdpwimMclZAsb2k5iOXRwkOR_/view"
+      href="https://drive.google.com/file/d/1lPSlc7HO6J2eLXeSy4JepZGFb8gsXoEx/view"
       target="_blank"
       rel="noopener noreferrer"
     >
